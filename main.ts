@@ -46,6 +46,14 @@ input.onGesture(Gesture.ScreenUp, function () {
     basic.showIcon(IconNames.SmallDiamond)
     set_Time = 0
 })
+input.onGesture(Gesture.Shake, function () {
+    music.playTone(523, music.beat(BeatFraction.Sixteenth))
+    music.playTone(659, music.beat(BeatFraction.Sixteenth))
+    music.playTone(659, music.beat(BeatFraction.Sixteenth))
+    music.playTone(784, music.beat(BeatFraction.Sixteenth))
+    basic.showIcon(IconNames.SmallDiamond)
+    set_Time = 0
+})
 input.onGesture(Gesture.ScreenDown, function () {
     set_Time = 30
     music.playTone(988, music.beat(BeatFraction.Sixteenth))
