@@ -14,6 +14,8 @@ input.onGesture(Gesture.TiltRight, function () {
 })
 input.onGesture(Gesture.TiltLeft, function () {
     set_Time = 5
+    music.playTone(988, music.beat(BeatFraction.Sixteenth))
+    music.playTone(880, music.beat(BeatFraction.Sixteenth))
     basic.showString("" + (set_Time))
     while (set_Time > 0) {
         basic.pause(60000)
@@ -38,6 +40,10 @@ input.onGesture(Gesture.LogoUp, function () {
 })
 input.onGesture(Gesture.ScreenUp, function () {
     set_Time = 0
+    music.playTone(523, music.beat(BeatFraction.Sixteenth))
+    music.playTone(659, music.beat(BeatFraction.Sixteenth))
+    music.playTone(659, music.beat(BeatFraction.Sixteenth))
+    music.playTone(784, music.beat(BeatFraction.Sixteenth))
     basic.showIcon(IconNames.SmallDiamond)
 })
 input.onGesture(Gesture.ScreenDown, function () {
