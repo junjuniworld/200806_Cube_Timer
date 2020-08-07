@@ -39,12 +39,12 @@ input.onGesture(Gesture.LogoUp, function () {
     basic.showString("10")
 })
 input.onGesture(Gesture.ScreenUp, function () {
-    set_Time = 0
     music.playTone(523, music.beat(BeatFraction.Sixteenth))
     music.playTone(659, music.beat(BeatFraction.Sixteenth))
     music.playTone(659, music.beat(BeatFraction.Sixteenth))
     music.playTone(784, music.beat(BeatFraction.Sixteenth))
     basic.showIcon(IconNames.SmallDiamond)
+    set_Time = 0
 })
 input.onGesture(Gesture.ScreenDown, function () {
     set_Time = 30
