@@ -61,6 +61,8 @@ input.onGesture(Gesture.ScreenDown, function () {
 })
 input.onGesture(Gesture.LogoDown, function () {
     set_Time = 15
+    music.playTone(988, music.beat(BeatFraction.Sixteenth))
+    music.playTone(880, music.beat(BeatFraction.Sixteenth))
     basic.showString("" + (set_Time))
     while (set_Time > 0) {
         basic.pause(60000)
